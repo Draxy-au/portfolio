@@ -6,5 +6,6 @@ I made a portfolio for myself, using React and Next.js to showcase the projects 
 ## Technologies Used
 * React 
 * Next.js 
+* Framer Motion
 * HTML5 
 * CSS3
