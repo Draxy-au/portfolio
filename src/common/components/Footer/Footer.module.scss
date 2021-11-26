@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
+  background-color: var(--color-bg-footer);
+}
+
+.footer p {
+  color: var(--color-text-light);
+}
+
+.footer a {
+  color: var(--color-text-highlight);
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: var(--color-text-highlight-hover);
+}

@@ -1,0 +1,112 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-bg-home);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  height: 340px;
+  width: 340px;
+  margin-right: 25px;
+}
+
+.info {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.name {
+  color: var(--color-text-light);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 84.38px;
+}
+
+.title {
+  color: var(--color-text-light);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56.28px;
+}
+
+.line hr {
+  width: 580px;
+  height: 0px;
+  border: 5px solid #FFFFFF;
+  margin: 1rem 0rem;
+}
+
+.resume {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.projects button {
+  
+  background-color: var(--color-button-std-purple);
+}
+
+.projects button p {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-button-text-purple);
+}
+
+.projects button:hover {
+  background-color: var(--color-button-std-purple-hover);
+}
+.contact button {
+  background-color: var(--color-button-std-blue);
+  
+}
+
+.contact button p {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-button-text-blue);
+}
+
+.contact button:hover {
+  background-color: var(--color-button-std-blue-hover);
+}
+
+.resume button {
+  background-color: var(--color-button-cta);
+}
+
+.resume button p {
+  color: var(--color-button-text-cta);
+}
+
+.resume button:hover {
+  background-color: var(--color-button-cta-hover);
+}
+
+.chevronDown {
+  fill: #ffffff;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  bottom: 40px;
+  margin: 0 auto;
+}

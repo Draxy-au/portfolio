@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-app);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: 165px;
+  height: 46px;
+  border: 0;
+  font-size: 24px;
+  line-height: 28.13px;
+  font-weight: 400;
+  margin: 1px;
+  background-color: var(--color-button-std);
+}
+
+button p {
+  color: var(--color-button-text-std);
+  margin-left: 18px;
+}
+
+button svg {
+  fill:#FFFFFF;
+  margin-left: 15px;
+}
+
+button:hover {
+  background-color: var(--color-button-std-hover);
+}
+
+.GRADIENT__BG {
+  /* ff 3.6+ */
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(80, 80, 80, 1) 0%, rgba(40, 40, 40, 1) 100%);
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(80, 80, 80, 1) 0%, rgba(40, 40, 40, 1) 100%);
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(80, 80, 80, 1) 0%, rgba(40, 40, 40, 1) 100%);
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(80, 80, 80, 1) 0%, rgba(40, 40, 40, 1) 100%);
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(80, 80, 80, 1) 0%, rgba(40, 40, 40, 1) 100%);
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}
+
+:root {
+  --font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  --color-bg-app: #626262;
+  --color-bg-navbar: #181818;
+  --color-bg-home: #282828;
+  --color-bg-projects: #4F4F4F;
+  --color-bg-contact: #282828;
+  --color-bg-footer: #000000;
+
+  --color-pill: #666666;
+
+  --color-text-dark: #000000;
+  --color-text-light: #FFFFFF;
+  --color-text-input: #252525;
+  --color-text-link: #363490;
+  --color-text-highlight:#D8A800;
+  --color-text-highlight-hover:#d87a00;
+
+  --color-button-std: #C4C4C4;
+  --color-button-text-std: rgba(0,0,0,0.5);
+  --color-button-text-std-dark: rgba(0,0,0,0.5);
+  --color-button-std-hover: #999999;
+  
+  --color-button-cta: #AC0000;
+  --color-button-text-cta: #ffffff;
+  --color-button-cta-hover: #860000;
+  
+  --color-button-demo: #d3a709;
+  --color-button-demo-modal: #d3a709;
+  --color-button-text-demo: #ffffff;
+  --color-button-demo-hover: #e0b723;
+  
+  --color-button-github: #4C589B;
+  --color-button-github-modal: #4C589B;
+  --color-button-text-github: #ffffff;
+  --color-button-github-hover: #5764af;
+  
+  --color-button-info: #4c9b74;
+  --color-button-text-info: #ffffff;
+  --color-button-info-hover: #3e8662;
+
+  --color-button-std-blue: #363490;
+  --color-button-text-blue: #ffffff;
+  --color-button-std-blue-hover: #6272ce;
+
+  --color-button-std-purple: #683490;
+  --color-button-text-purple: #ffffff;
+  --color-button-std-purple-hover: #8c46c2;
+}
