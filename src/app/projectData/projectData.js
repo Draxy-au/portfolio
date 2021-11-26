@@ -34,7 +34,7 @@ const projectData = [
     image: figma,
     objective: "I wanted to take an idea from scratch through wireframe to mockup, and in to production. This turned in to my portfolio design, and helped me better understand more the process and challenges while developing a web site.",
     demo: "https://www.figma.com/file/n5a6meqlBBgSI3gqrnGAyJ/My-Portfolio-Figma-Mockup?node-id=1%3A2",
-    github: "http://www.github.com",
+    github: "https://github.com/Draxy-au/portfolio",
   },
 ];
 
