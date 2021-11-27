@@ -113,12 +113,14 @@
 .demo button {
   display: flex;
   background-color: var(--color-button-demo-modal);
+  
 }
 
 .icon {
   justify-content: flex-start;
   width: 45px;
   margin-left: 5px;
+  overflow-x: unset;
 }
 
 .demo button svg {
@@ -126,7 +128,7 @@
   flex-direction: row;
   justify-content: center;
   width: 45px;
-
+  
   margin-left: 0px;
   align-items: center;
 }
