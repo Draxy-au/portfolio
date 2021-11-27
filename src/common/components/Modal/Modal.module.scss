@@ -118,18 +118,16 @@
 
 .icon {
   justify-content: flex-start;
-  width: 45px;
   margin-left: 5px;
   overflow-x: unset;
+  
 }
 
 .demo button svg {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 45px;
-  
-  margin-left: 0px;
+  margin: 2px 5px;
   align-items: center;
 }
 
@@ -156,8 +154,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 45px;
-  margin: 2px 0px;
+  width: 40px;
+  margin: 2px 5px;
   align-items: center;
 }
 
@@ -240,12 +238,14 @@
   }
 
   .demo button {
-    width: 120px;
+    width: 130px;
     height: 40px;
   }
 
   .demo button svg {
-    width: 35px;
+    max-width: 35px;
+    max-height: 30px;
+    margin: 0 2px;
   }
 
   .demo button p {
@@ -253,12 +253,13 @@
   }
 
   .github button {
-    width: 120px;
+    width: 130px;
     height: 40px;
   }
 
   .github button svg {
-    width: 35px;
+    max-width: 30px;
+    margin: 0 1px;
   }
 
   .github button p {
@@ -346,7 +347,9 @@
   }
 
   .demo button svg {
-    width: 35px;
+    max-width: 35px;
+    max-height: 25px;
+    margin: 2px 0;
   }
 
   .demo button p {
@@ -359,7 +362,8 @@
   }
 
   .github button svg {
-    width: 35px;
+    max-width: 25px;
+    margin: 2px 2px;
   }
 
   .github button p {
