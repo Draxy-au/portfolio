@@ -1,8 +1,8 @@
-const mail = require('@sendgrid/mail');
+import sendgrid from "@sendgrid/mail";
 
-mail.setApiKey(process.env.SENDGRID_API_KEY);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default function handler(req, res) {
+export default async function sendEmail(req, res) {
   const body = JSON.parse(req.body);
   const message = `
     
@@ -18,8 +18,11 @@ export default function handler(req, res) {
     text: message,
     html: message.replace(/\r\n/g, '<br>')
   }
-
-  mail.send(data);
+  try {
+    sendgrid.send(data);
+  } catch (error) {
+    return res.status(error.statusCode || 500).json({ error: error.message });
+  }
 
   res.status(200).json({ status: 'Ok' });
 }
