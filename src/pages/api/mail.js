@@ -19,7 +19,7 @@ export default async function sendEmail(req, res) {
     html: message.replace(/\r\n/g, '<br>')
   }
   try {
-    sendgrid.send(data);
+    await sendgrid.send(data);
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
