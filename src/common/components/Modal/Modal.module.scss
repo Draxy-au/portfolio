@@ -101,6 +101,7 @@
   margin-bottom: 10px;
   align-items: center;
   justify-content: space-evenly;
+  overflow-x: unset;
 }
 
 .buttons_container button {
@@ -108,12 +109,24 @@
   flex-direction: row;
   width: 150px;
   height: 55px;
+ 
+}
+
+.demo {
+  overflow-x: unset;
+  overflow-y: unset;
+}
+
+.github {
+  overflow-x: unset;
+  overflow-y: unset;
 }
 
 .demo button {
   display: flex;
   background-color: var(--color-button-demo-modal);
-  
+  overflow-x: unset;
+  overflow-y: unset;
 }
 
 .icon {
