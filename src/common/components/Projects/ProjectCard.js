@@ -22,7 +22,7 @@ export default function ProjectCard({
   return (
     <div className={styles.card}>
       <div className={styles.image}>
-        <Image src={image} />
+        <Image priority src={image} />
       </div>
       <div className={styles.buttons_container}>
         <div className={styles.demo}>

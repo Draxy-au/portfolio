@@ -25,7 +25,6 @@ function PageDown({link = '#'}) {
 
   useEffect(() => {
     if (inView) {
-      console.log("well we got in Down...");
       controls.start("downAnimate");
     }
     if (!inView) {
