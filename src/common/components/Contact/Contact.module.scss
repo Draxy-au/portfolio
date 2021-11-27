@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
   background-color: var(--color-bg-contact);
 }
 
@@ -11,12 +12,20 @@
   font-size: 36px;
   font-weight: 700;
   color: var(--color-text-light);
-  margin: 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.contentwrap {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .content {
   width: 100%;
-  height: 325px;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,7 +35,7 @@
 .contact_form {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: fit-content;
   justify-content: space-between;
 }
 
@@ -34,6 +43,7 @@
   height: 45px;
   width: 340px;
   font-size: 24px;
+  margin-bottom: 10px;
   font-family: var(--font-family);
   color: var(--color-text-input);
 }
@@ -45,6 +55,7 @@
   resize: none;
   font-family: var(--font-family);
   color: var(--color-text-input);
+  margin-bottom: 10px;
 }
 
 .contact_form button p {
@@ -63,6 +74,7 @@
 
 .resume button {
   background-color: var(--color-button-cta);
+  margin-bottom: 20px;
 }
 
 .resume button p {
@@ -107,4 +119,116 @@
   min-height: fit-content;
   justify-content: center;
   margin: 20px 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .contentwrap {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact_form {
+    width: 80%;
+  }
+
+  .contact_form input {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .contact_form textarea {
+    width:100%;
+    margin: 5px 0px;
+  }
+
+  .sendmsg {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sendmsg button {
+    background-color: var(--color-button-std-blue);
+    height: 40px;
+    width: 120px;
+    margin: 5px 0 20px 0;
+  }
+  
+  .sendmsg button p {
+    color: var(--color-button-text-blue);
+    font-size: 24px;
+  }
+
+  .sendmsg button svg {
+    width: 25px;
+  }
+  
+  .sendmsg button:hover {
+    background-color: var(--color-button-std-blue-hover);
+  }
+  
+  .resume button {
+    margin-bottom: 5px;
+  }
+  
+  .socials svg {
+    width: 50px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    fill: var(--color-text-light);
+  }
+
+  .info {
+    flex-direction: row;
+  }
+
+  .socials {
+    display: flex;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact_form {
+    width: 90%;
+  }
+
+  .contact_form input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .contact_form textarea {
+    width:100%;
+    
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .content {
+    max-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+  
+  .info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .socials {
+    margin-top: 10px;
+  }
 }

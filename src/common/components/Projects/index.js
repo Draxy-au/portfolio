@@ -17,9 +17,7 @@ const Projects = () => {
     if (inView) {
       setShowProjects(true);
     }
-    if (!inView) {
-      setShowProjects(false);
-    }
+    
     
   }, [inView])
 

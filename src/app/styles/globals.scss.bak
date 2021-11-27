@@ -16,7 +16,6 @@ a {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 button {
@@ -90,14 +89,6 @@ button:hover {
   --title-mobile-font-size: 32px;
   --title-mobile-font-weight: 400;
   --title-mobile-line-height: 42.19;
-  
-  --name-tablet-font-size: 52px;
-  --name-tablet-font-weight: 700;
-  --name-tablet-line-height: 56.25px;
-  
-  --title-tablet-font-size: 42px;
-  --title-tablet-font-weight: 400;
-  --title-tablet-line-height: 42.19;
 
   --color-text-dark: #000000;
   --color-text-light: #FFFFFF;

@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import PageDown from "../PageDown/PageDown";
 
 const Home = () => (
+  <>
   <div className={styles.home}>
     <div className={styles.content}>
       <motion.div 
@@ -124,7 +125,7 @@ const Home = () => (
           </motion.div>
         </div>
       </div>
-      <motion.div 
+    </div><motion.div 
         initial={{
           y: -100,
           opacity: 0
@@ -140,8 +141,9 @@ const Home = () => (
       >
         <PageDown link='#projects' />
       </motion.div>
-    </div>
   </div>
+  
+  </>
 );
 
 export default Home;

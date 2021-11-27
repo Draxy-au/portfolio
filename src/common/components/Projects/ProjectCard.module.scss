@@ -63,3 +63,13 @@
 .info button:hover {
   background-color: var(--color-button-info);
 }
+
+@media screen and (max-width: 310px) {
+  .image {
+    max-width: 250px;
+  }
+
+  .buttons_container {
+    display: none;
+  }
+}

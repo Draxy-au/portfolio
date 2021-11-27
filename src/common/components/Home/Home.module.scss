@@ -13,8 +13,9 @@
 }
 
 .logo {
-  height: 340px;
-  width: 340px;
+  height: fit-content;
+  width: fit-content;
+  overflow-y: hidden;
   margin-right: 25px;
 }
 
@@ -28,22 +29,22 @@
 
 .name {
   color: var(--color-text-light);
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 84.38px;
+  font-size: var(--name-font-size);
+  font-weight: var(--name-font-weight);
+  line-height: var(--name-font-height);
 }
 
 .title {
   color: var(--color-text-light);
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56.28px;
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-font-height);
 }
 
 .line hr {
   width: 580px;
   height: 0px;
-  border: 5px solid #FFFFFF;
+  border: 5px solid #ffffff;
   margin: 1rem 0rem;
 }
 
@@ -60,7 +61,6 @@
 }
 
 .projects button {
-  
   background-color: var(--color-button-std-purple);
 }
 
@@ -75,7 +75,6 @@
 }
 .contact button {
   background-color: var(--color-button-std-blue);
-  
 }
 
 .contact button p {
@@ -102,11 +101,152 @@
 
 .chevronDown {
   fill: #ffffff;
-  position: absolute;
   display: flex;
+  position: absolute;
   justify-content: center;
+  overflow-x: unset;
   width: 100%;
-  left: 0;
-  bottom: 40px;
+  bottom:0;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+  }
+
+  .name {
+    width: 100%;
+    font-size: var(--name-tablet-font-size);
+    font-weight: var(--name-tablet-font-weight);
+    line-height: var(--name-tablet-font-height);
+  }
+
+  .title {
+    width: 100%;
+    font-size: var(--title-tablet-font-size);
+    font-weight: var(--title-tablet-font-weight);
+    line-height: var(--title-tablet-font-height);
+  }
+  .line {
+    width: 100%;
+  }
+
+  .line hr {
+    width: 95%;
+    height: 0px;
+    border: 5px solid #ffffff;
+    margin: 1rem 0rem;
+  }
+
+  .projects button {
+    width: 100px;
+  }
+
+  .projects p {
+    font-size: 18px;
+  }
+
+  .contact button {
+    width: 100px;
+  }
+
+  .contact p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+  }
+
+  .name {
+    font-size: var(--name-mobile-font-size);
+    font-weight: var(--name-mobile-font-weight);
+    line-height: var(--name-mobile-font-height);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: var(--title-mobile-font-size);
+    font-weight: var(--title-mobile-font-weight);
+    line-height: var(--title-mobile-font-height);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .line {
+    width: 100%;
+  }
+
+  .line hr {
+    width: 95%;
+    height: 0px;
+    border: 5px solid #ffffff;
+    margin: 1rem 0rem;
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 250px;
+  }
+
+  .name {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+
+  .title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+
+  .line hr {
+    width: 100%;
+  }
+
+  .projects button {
+    width: 120px;
+  }
+
+  .resume button {
+    width: 150px;
+  }
 }
