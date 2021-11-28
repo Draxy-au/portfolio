@@ -251,7 +251,7 @@
   }
 }
 
-@media screen and ( max-height: 650px ){
+@media screen and ( max-height: 800px ) and (max-width: 550px) {
   .chevronDown {
     display: none;
   }
