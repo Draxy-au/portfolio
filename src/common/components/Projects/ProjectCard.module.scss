@@ -64,6 +64,29 @@
   background-color: var(--color-button-info);
 }
 
+.brief {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  max-width: 300px;
+}
+
+.brief_title {
+  display: flex;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brief_info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-text-light);
+  margin: 5px 0 25px 0;
+}
+
 @media screen and (max-width: 310px) {
   .image {
     max-width: 250px;

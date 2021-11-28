@@ -50,6 +50,14 @@ export default function ProjectCard({
           </button>
         </div>
       </div>
+      <div className={styles.brief}>
+        <div className={styles.brief_title}>
+          {name}
+        </div>
+        <div className={styles.brief_info}>
+          {info}
+        </div>
+      </div>
     </div>
   );
 }
