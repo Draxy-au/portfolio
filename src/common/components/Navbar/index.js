@@ -8,7 +8,7 @@ import Menu from "../Menu";
 import HamburgerSVG from "../SVG/HamburgerSVG";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <div className={styles.navbar} id="#navbar">
