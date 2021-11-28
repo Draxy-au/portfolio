@@ -77,9 +77,14 @@ const Contact = () => {
                 <Image src={Logo} />
               </div>
               <div className={styles.resume}>
-                <button>
+              <a
+                href="WilliamHamiltonResume.pdf"
+                alt="Download Resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              ><button>
                   <FileDownloadSVG /> <p>Resume</p>
-                </button>
+                </button></a>
               </div>
               <div className={styles.socials}>
                 <Link href="https://github.com/Draxy-au">
