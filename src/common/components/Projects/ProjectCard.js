@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import { useRef } from "react";
 import styles from "./ProjectCard.module.scss";
 import Modal from "common/components/Modal";
@@ -7,7 +7,7 @@ import defaultProjectImage from "assets/images/projectImage.png";
 
 export default function ProjectCard({
   name = "Project Name",
-  tags = ['HTML5'],
+  tags = ["HTML5"],
   image = defaultProjectImage,
   demo = "http://www.google.com",
   git = "http://www.github.com",
@@ -22,7 +22,14 @@ export default function ProjectCard({
   return (
     <div className={styles.card}>
       <div className={styles.image}>
-        <Image priority src={image} onClick={openModal} />
+        <Image
+          priority
+          src={image}
+          onClick={openModal}
+          alt=""
+          height={250}
+          width={300}
+        />
       </div>
       <div className={styles.buttons_container}>
         <div className={styles.demo}>
@@ -36,12 +43,20 @@ export default function ProjectCard({
             info={info}
           />
           <button>
-            <p><Link href={demo}><a target='_blank'>Demo</a></Link></p>
+            <p>
+              <Link href={demo}>
+                <a target="_blank">Demo</a>
+              </Link>
+            </p>
           </button>
         </div>
         <div className={styles.github}>
           <button>
-            <p><Link href={git}><a target='_blank'>GitHub</a></Link></p>
+            <p>
+              <Link href={git}>
+                <a target="_blank">GitHub</a>
+              </Link>
+            </p>
           </button>
         </div>
         <div className={styles.info}>
@@ -51,12 +66,8 @@ export default function ProjectCard({
         </div>
       </div>
       <div className={styles.brief}>
-        <div className={styles.brief_title}>
-          {name}
-        </div>
-        <div className={styles.brief_info}>
-          {info}
-        </div>
+        <div className={styles.brief_title}>{name}</div>
+        <div className={styles.brief_info}>{info}</div>
       </div>
     </div>
   );

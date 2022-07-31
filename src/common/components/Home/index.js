@@ -124,7 +124,7 @@ const Home = () => (
               className={styles.resume}
             >
               <a
-                href="WilliamHamiltonResume.pdf"
+                href="William_Hamilton_Resume.pdf"
                 alt="Download Resume"
                 target="_blank"
                 rel="noopener noreferrer"
